@@ -1,0 +1,48 @@
+site_name: Minolta X-370 Repair Log
+site_description: Diagnosis and repair log for a Minolta X-370 shutter/wind-lever fault
+site_url: https://jesssullivan.github.io/minolta-x370-repair/
+repo_url: https://github.com/Jesssullivan/minolta-x370-repair
+repo_name: Jesssullivan/minolta-x370-repair
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.integrate
+    - content.code.copy
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - Diagnosis: diagnosis.md
+  - Parts Sourcing: parts-sourcing.md
+  - Capacitor & Tools: capacitor-and-tools.md
+  - Bench Testing: bench-testing.md
+  - Focusing Screen: focusing-screen-replacement.md
+  - Bibliography: bibliography.md
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.details
+  - toc:
+      permalink: true
