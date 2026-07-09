@@ -29,6 +29,10 @@ All sources consulted during diagnosis and parts research. Tier noted where it m
 
 - Rokkor Files — X-Series Screens (screen types, interchangeability history): <https://www.rokkorfiles.com/Screens.htm>
 
+## Site tooling
+
+- Material for MkDocs — "What MkDocs 2.0 means for your documentation projects" (basis for migrating this site off mkdocs-material to SvelteKit in 2026-07, ahead of the plugin-system removal in upstream MkDocs 2.0): <https://squidfunk.github.io/mkdocs-material/blog/2026/02/18/mkdocs-2.0/>
+
 ## Parts sourcing (see `parts-sourcing.md` for the live, dated pricing detail — links only here)
 
 - eBay listings: focusing screens, parts bodies, EH-7 eyecups — individually linked in `parts-sourcing.md`

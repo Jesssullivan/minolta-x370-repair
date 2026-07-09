@@ -4,7 +4,9 @@ Context for any coding/AI agent working in this repository.
 
 ## What this repo is
 
-A documentation-only repair log for a single physical object (a Minolta X-370 35mm SLR), not a software project. There is no code to build, test, or lint. "Contributions" are markdown edits recording what was actually done to the camera, sourced parts, and bench-test results.
+A documentation-only repair log for a single physical object (a Minolta X-370 35mm SLR), not a software project. `docs/*.md` is the single source of truth — "contributions" are markdown edits recording what was actually done to the camera, sourced parts, and bench-test results.
+
+There is a thin SvelteKit + adapter-static site (`src/`) that renders `docs/*.md` at <https://jesssullivan.github.io/minolta-x370-repair/> (private Pages, repo-access only). It's a presentation layer, not the content source — never add content by editing `src/`, only by editing `docs/*.md`. See `CLAUDE.md` for the site's build commands. Previously mkdocs-material; migrated off it 2026-07 since Material for MkDocs entered maintenance mode ahead of the MkDocs 2.0 plugin-system removal (see `docs/bibliography.md`).
 
 ## Ground rules for agents
 
