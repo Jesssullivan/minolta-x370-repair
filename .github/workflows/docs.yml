@@ -1,4 +1,4 @@
-name: Deploy docs
+name: Deploy docs - ubu latest - switch to GF topo
 
 on:
   push:
