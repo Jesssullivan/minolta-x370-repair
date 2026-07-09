@@ -17,7 +17,7 @@ See [`docs/diagnosis.md`](docs/diagnosis.md) for the full hypothesis ranking tha
 
 1. Source a cheap parts/non-working X-370 body for a donor coupler lever assembly — [`docs/parts-sourcing.md`](docs/parts-sourcing.md)
 2. Swap in the donor coupler lever, verify full wind-lever stroke and shutter release restored
-3. While the base plate is off: verify the storage capacitor and release-magnet with a DMM/scope — [`docs/bench-testing.md`](docs/bench-testing.md)
+3. While the base plate is off: verify the storage capacitor and release-magnet with a DMM/scope, and replace C7 if it fails — [`docs/bench-testing.md`](docs/bench-testing.md) for the test procedure, [`docs/capacitor-and-tools.md`](docs/capacitor-and-tools.md) for the replacement part and the soldering tools to do it with
 4. Replace the focusing screen if needed — [`docs/focusing-screen-replacement.md`](docs/focusing-screen-replacement.md)
 5. Replace the eyecup (EH-7) — see parts sourcing doc
 
@@ -29,6 +29,7 @@ All external sources cited throughout are collected in [`docs/bibliography.md`](
 - [ ] Donor parts body sourced
 - [ ] Coupler lever swapped
 - [ ] Capacitor/magnet bench-verified
+- [ ] Capacitor (C7) replaced, if bench test fails
 - [ ] Focusing screen replaced
 - [ ] Eyecup replaced
 - [ ] Camera confirmed functional with a test roll
