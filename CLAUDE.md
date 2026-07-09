@@ -4,7 +4,17 @@ Project-specific guidance for Claude Code in this repo. See `AGENTS.md` first fo
 
 ## Nature of this repo
 
-Markdown-only repair documentation. No build/test/lint commands exist or are needed. Do not scaffold a build system, CI, or package manifest here — that would be scope creep on a personal repair log.
+Markdown-first repair documentation (`docs/*.md`), plus a lightweight SvelteKit + adapter-static site (`src/`) that renders it to GitHub Pages. The site is intentionally minimal — no Bazel, no Nix, no Skeleton UI, none of the `tinyland-inc/site.scaffold` house-scaffold tooling. Don't reach for that scaffold's conventions here; this is a one-off personal repo, not a Tinyland brand site.
+
+### Site build commands
+
+- `pnpm install` — install deps
+- `pnpm dev` — local dev server
+- `pnpm build` — production build to `build/` (what CI deploys)
+- `pnpm preview` — serve the production build locally
+- `pnpm check` — svelte-check
+
+Content lives in `docs/*.md` at the repo root, not under `src/`. To add a new doc page: add the `.md` file to `docs/`, then add a matching entry to `DOCS` in `src/lib/docs.ts` (this drives both the nav sidebar and the prerendered route list). Cross-doc links use bare `foo.md` filenames (so they still resolve when browsing `docs/` directly on GitHub) — `src/lib/server/markdown.ts` rewrites them to site routes at render time.
 
 ## Working conventions
 
